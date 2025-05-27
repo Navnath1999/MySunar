@@ -1,1 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySunar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- hero sction end -->
+  <section class="hero-section">
+    <div class="container-fluid my-4">
+      <div class="row g-3">
+
+        <!-- Static Main Image -->
+        <div class="col-lg-4 col-12 ps-2 pe-0">
+          <img src="./main.png" class="img-fluid w-100 h-100" alt="Main Image">
+        </div>
+
+        <!-- Grid Carousel -->
+        <div class="col-lg-8 col-12 position-relative ps-0 pe-0">
+          <div id="gridCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="container-fluid">
+                  <div class="row g-2">
+                    <!-- Top row -->
+                    <div class="col-3"><img src="./Rectangle 191.png" class="img-fluid img-grid w-100" alt="1"></div>
+                    <div class="col-3"><img src="./Rectangle 192.png" class="img-fluid img-grid w-100" alt="2"></div>
+                    <div class="col-3"><img src="./Rectangle 193.png" class="img-fluid img-grid w-100" alt="3"></div>
+                    <div class="col-3"><img src="./Rectangle 194.png" class="img-fluid img-grid w-100" alt="4"></div>
+                    <!-- Bottom row -->
+                    <div class="col-3"><img src="./Rectangle 195.png" class="img-fluid img-grid w-100" alt="5"></div>
+                    <div class="col-3"><img src="./Rectangle 280.png" class="img-fluid img-grid w-100" alt="6"></div>
+                    <div class="col-3"><img src="./Rectangle 282.png" class="img-fluid img-grid w-100" alt="7"></div>
+                    <div class="col-3"><img src="./Rectangle 283.png" class="img-fluid img-grid w-100" alt="8"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="container-fluid">
+                  <div class="row g-2">
+                    <!-- Top row -->
+                    <div class="col-3"><img src="./Rectangle 191.png" class="img-fluid img-grid w-100" alt="9"></div>
+                    <div class="col-3"><img src="./Rectangle 192.png" class="img-fluid img-grid w-100" alt="10"></div>
+                    <div class="col-3"><img src="./Rectangle 193.png" class="img-fluid img-grid w-100" alt="11"></div>
+                    <div class="col-3"><img src="./Rectangle 194.png" class="img-fluid img-grid w-100" alt="12"></div>
+                    <!-- Bottom row -->
+                    <div class="col-3"><img src="./Rectangle 195.png" class="img-fluid img-grid w-100" alt="13"></div>
+                    <div class="col-3"><img src="./Rectangle 280.png" class="img-fluid img-grid w-100" alt="14"></div>
+                    <div class="col-3"><img src="./Rectangle 282.png" class="img-fluid img-grid w-100" alt="15"></div>
+                    <div class="col-3"><img src="./Rectangle 283.png" class="img-fluid img-grid w-100" alt="16"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arrows -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#gridCarousel" data-bs-slide="prev">
+              <span><i class="fas fa-arrow-left text-white"></i></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gridCarousel" data-bs-slide="next">
+              <span><i class="fas fa-arrow-right text-white"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero sction end -->
+
+
+  <!-- about mynunar sction start -->
+  <section class="about">
+    <!-- Top Banner -->
+    <div class="top-banner text-center py-4">
+      <h4 class="mb-2">We specialise in Safe Ear-Piercing Practices</h4>
+      <p class="mb-0">At the convenience of your home</p>
+      <button class="cta-btn">Personalise!</button>
+    </div>
+
+    <!-- Feature Section -->
+    <div class="container text-center py-5">
+      <div class="row g-4 align-items-start py-5">
+        <div class="col-md-4 feature-box">
+          <img src="./Daimond.png" alt="25+ Years">
+          <h5 class="highlight-text">25+ Years</h5>
+          <p>Of Experienced Goldsmiths,<br>across various communities in India</p>
+        </div>
+        <div class="col-md-4 feature-box">
+          <img src="./shield.png" alt="Prevents Infection">
+          <h5 class="highlight-text">Prevents Infection</h5>
+          <p>We use only EO Sterilised Gold,<br>preventing risk of infection</p>
+        </div>
+        <div class="col-md-4 feature-box">
+          <img src="./handshek.png" alt="Post-Care Help">
+          <h5 class="highlight-text">Post-Care Help</h5>
+          <p>We provide guidance for the next few weeks<br>after piercing, always in touch to help.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Lines with Centered Text and Link -->
+    <div class="centered-line-text">
+      <div class="gold-line"></div>
+      <div class="inline-text-link">
+        <div class="highlight-text mb-0">
+          7500+
+        </div>
+      </div>
+      <div class="gold-line-2"></div>
+    </div>
+    <div class="bottom-text">
+      <span>Children Onboard</span>
+      <a href="#" class="manual-link">Manual linking</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="foot-text text-center mt-5">
+      <div>Google Icon</div>
+    </div>
+  </section>
+  <!-- about mynunar sction end -->
+
+
+  <!-- rundown start -->
+  <section class="rundown">
+    <div class="container-fluid py-5">
+      <!-- Title -->
+      <div class="title-bar text-center mb-4">
+        <h2 class="m-0">Rundown</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Responsive layout -->
+      <div class="row flex-column flex-md-row align-items-center">
+        <!-- Left Column: Age Group -->
+        <div class="col-md-4 text-center mb-md-0">
+          <h5 class="age-title pb-4">Age Group</h5>
+          <div class="year-box">
+            <div class="arrow-btn" onclick="changeAge(-1)">&larr;</div>
+            <div class="year-label" id="ageText">0–1 Years</div>
+            <div class="arrow-btn" onclick="changeAge(1)">&rarr;</div>
+          </div>
+          <div class="percentage-box" id="percentageText">74%</div>
+        </div>
+
+        <!-- Right Column: Dot Grid -->
+        <div class="col-md-8" id="gridContainer">
+          <!-- JavaScript will generate the grid here -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- rundown end -->
+
+  <!-- review start -->
+  <section class="review">
+    <div class="container-fluid py-5 position-relative">
+      <h2 class="section-title mx-auto mb-5">Customer Love</h2>
+
+      <div class="container">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <img src="./customerlove1.png" class="testimonial-img mb-3" alt="Testimonial 1">
+                  <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="profile">S</div>
+                      <div>
+                        <strong>Shruti Vemula</strong><br>
+                        <span class="text-warning">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="mb-1">MySunar is one of the best services I have come across.</p>
+                    <p class="mb-0"><small>Less pain and Quick Healing<br>I would recommend this to
+                        everyone!</small></p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="testimonial-card mb-3">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="profile">S</div>
+                      <div>
+                        <strong>Shruti Vemula</strong><br>
+                        <span class="text-warning">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="mb-1">MySunar is one of the best services I have come across.</p>
+                    <p class="mb-0"><small>Less pain and Quick Healing<br>I would recommend this to
+                        everyone!</small></p>
+                  </div>
+                  <img src="./customerlove2.png" class="testimonial-img" alt="Testimonial 2">
+                </div>
+
+                <div class="col-md-4">
+                  <img src="./customerlove3.png" class="testimonial-img mb-3" alt="Testimonial 3">
+                  <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="profile">S</div>
+                      <div>
+                        <strong>Shruti Vemula</strong><br>
+                        <span class="text-warning">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="mb-1">MySunar is one of the best services I have come across.</p>
+                    <p class="mb-0"><small>Less pain and Quick Healing<br>I would recommend this to
+                        everyone!</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="testimonial-card mb-3">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="profile">A</div>
+                      <div>
+                        <strong>Anita Rao</strong><br>
+                        <span class="text-warning">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="mb-1">Exceptional care and professionalism.</p>
+                    <p class="mb-0"><small>Very gentle with my baby.<br>Highly recommended.</small>
+                    </p>
+                  </div>
+                  <img src="./customerlove1.png" class="testimonial-img" alt="Testimonial 4">
+                </div>
+
+                <div class="col-md-4">
+                  <img src="./customerlove2.png" class="testimonial-img mb-3" alt="Testimonial 5">
+                  <div class="testimonial-card">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="profile">R</div>
+                      <div>
+                        <strong>Ramesh Kumar</strong><br>
+                        <span class="text-warning">★★★★☆</span>
+                      </div>
+                    </div>
+                    <p class="mb-1">Good service, friendly staff.</p>
+                    <p class="mb-0"><small>Prompt and clean environment.</small></p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="testimonial-card mb-3">
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="profile">P</div>
+                      <div>
+                        <strong>Priya Nair</strong><br>
+                        <span class="text-warning">★★★★★</span>
+                      </div>
+                    </div>
+                    <p class="mb-1">Super helpful and safe.</p>
+                    <p class="mb-0"><small>Would book again anytime!</small></p>
+                  </div>
+                  <img src="./customerlove3.png" class="testimonial-img" alt="Testimonial 6">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Arrow -->
+          <button class="custom-carousel-arrow arrow-left" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <!-- Right Arrow -->
+          <button class="custom-carousel-arrow arrow-right" type="button" data-bs-target="#testimonialCarousel"
+            data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- review end -->
+
+  <!-- what make us start -->
+  <section class="what_makes_us">
+    <div class="container-fluid py-5">
+      <!-- Title with horizontal lines -->
+      <div class="wmu-title">
+        <h2 class="text-center mb-0">What makes us safe?</h2>
+      </div>
+
+      <div class="container pt-3">
+        <!-- First Row -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="safety-card">
+              <div class="icon-circle">
+                <img src="./eye.png" alt="Postcare guidance">
+              </div>
+              <h5 class="mt-2">Postcare guidance</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="safety-card">
+              <div class="icon-circle">
+                <img src="./home.png" alt="Service at home">
+              </div>
+              <h5 class="mt-2">Service at home</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="safety-card">
+              <div class="icon-circle">
+                <img src="./higyne.png" alt="EO-Sterilised Earring">
+              </div>
+              <h5 class="mt-2">EO-Sterilised Earring</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row Centered -->
+        <div class="row g-4 justify-content-center mt-1">
+          <div class="col-md-4">
+            <div class="safety-card">
+              <div class="icon-circle">
+                <img src="./earing.png" alt="Hypoallergenic Earrings">
+              </div>
+              <h5 class="mt-2">Hypoallergenic Earrings</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="safety-card">
+              <div class="icon-circle">
+                <img src="./earing.png" alt="Traditional & Clinical Piercing">
+              </div>
+              <h5 class="mt-2">Traditional & Clinical Piercing</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- what make us end -->
+
+
+  <script>
+    const totalBoxes = 50;
+    const ageGroups = [
+      { label: "0–1 Years", percentage: 74 },
+      { label: "1–2 Years", percentage: 80 }
+    ];
+    let currentAgeIndex = 0;
+
+    const ageTextEl = document.getElementById("ageText");
+    const percentageTextEl = document.getElementById("percentageText");
+    const gridContainer = document.getElementById("gridContainer");
+
+    function renderUI() {
+      const { label, percentage } = ageGroups[currentAgeIndex];
+      ageTextEl.textContent = label;
+      percentageTextEl.textContent = `${percentage}%`;
+      renderGrid(Math.round((percentage / 100) * totalBoxes));
+    }
+
+    function renderGrid(filledBoxes) {
+      gridContainer.innerHTML = '';
+      for (let row = 0; row < 5; row++) {
+        const rowDiv = document.createElement("div");
+        rowDiv.className = 'grid-row';
+        for (let col = 0; col < 10; col++) {
+          const index = row * 10 + col;
+          const box = document.createElement("div");
+          box.className = `grid-box ${index < filledBoxes ? 'grid-dark' : 'grid-light'}`;
+          rowDiv.appendChild(box);
+        }
+        gridContainer.appendChild(rowDiv);
+      }
+    }
+
+    function changeAge(direction) {
+      currentAgeIndex += direction;
+      currentAgeIndex = Math.max(0, Math.min(ageGroups.length - 1, currentAgeIndex));
+      renderUI();
+    }
+
+    renderUI();
+  </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
