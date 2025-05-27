@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Beginners Earring</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fdf6e9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #3f1e4d;
+      margin: 30px 0 20px;
+    }
+
+    .product-card {
+      border-radius: 20px;
+      padding: 25px 20px;
+      text-align: center;
+      position: relative;
+      background-color: transparent;
+    }
+
+    .wishlist-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 1.5rem;
+      color: #a97a7a;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .wishlist-icon.active {
+      color: red;
+    }
+
+    .wishlist-popup {
+      position: absolute;
+      top: -25px;
+      right: 0;
+      background-color: #fef1ec;
+      color: #d84a3f;
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(5px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .wishlist-icon.show-popup .wishlist-popup {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .product-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: auto;
+      background: conic-gradient(from 210deg at 50% 50%, #ffd700, #fff 25%, #ffd700 60%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      padding:0px;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: #d1c270;
+      color: #4b204d;
+      border-radius: 25px;
+      display: inline-block;
+      padding: 5px 20px;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+
+    .product-subtitle {
+      font-size: 0.9rem;
+      color: #4b204d;
+      margin: 10px 0;
+    }
+
+    .toggle-switch {
+      background-color: #f5ebdc;
+      border-radius: 50px;
+      display: inline-flex;
+      padding: 4px;
+      margin-bottom: 20px;
+    }
+
+    .toggle-switch input[type="radio"] {
+      display: none;
+    }
+
+    .toggle-switch label {
+      padding: 5px 20px;
+      margin: 0;
+      cursor: pointer;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #4b204d;
+      transition: 0.3s ease;
+    }
+
+    .toggle-switch input[type="radio"]:checked + label {
+      background-color: #4b204d;
+      color: #fff;
+    }
+
+    .price-box {
+      background-color: #4b204d;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .price-box small {
+      display: block;
+      font-size: 0.7rem;
+      color: #e7d3cc;
+    }
+
+    .price-box .price {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .btn-cart {
+      background-color: #d4c26f;
+      color: #4b204d;
+      border: none;
+      border-radius: 10px;
+      padding: 6px 16px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .middle-card {
+      position: relative;
+    }
+
+    .vertical-line.left,
+    .vertical-line.right {
+      position: absolute;
+      top: 15%;
+      height: 70%;
+      width: 2px;
+      background-color: #d4c26f;
+    }
+
+    .vertical-line.left {
+      left: -15px;
+    }
+
+    .vertical-line.right {
+      right: -15px;
+    }
+
+    @media (max-width: 991px) {
+      .vertical-line.left,
+      .vertical-line.right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">The Beginners Earring</div>
+  <div class="row justify-content-center text-center align-items-start">
+
+    <!-- Card 1 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="product-card">
+        <div class="wishlist-icon" onclick="toggleWishlist(this)">
+          <span class="wishlist-popup">Added to wishlist</span>♡
+        </div>
+        <div class="product-image">
+          <img src="./gliz.png" alt="Glitz">
+        </div>
+        <div class="product-title">GLITZ</div>
+        <div class="product-subtitle">Gold Stud</div>
+        <div class="toggle-switch">
+          <input type="radio" id="glitz-fixed" name="glitz" checked>
+          <label for="glitz-fixed">Fixed</label>
+          <input type="radio" id="glitz-dangling" name="glitz">
+          <label for="glitz-dangling">Dangling</label>
+        </div>
+        <div class="price-box">
+          <div>
+            <div class="price">₹4,215</div>
+            <small>Includes Gold product, piercing service at home and taxes</small>
+          </div>
+          <button class="btn-cart">Move to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 (Middle) with Vertical Dividers -->
+    <div class="col-lg-4 col-md-6 mb-4 middle-card">
+      <div class="vertical-line left"></div>
+      <div class="vertical-line right"></div>
+      <div class="product-card">
+        <div class="wishlist-icon" onclick="toggleWishlist(this)">
+          <span class="wishlist-popup">Added to wishlist</span>♡
+        </div>
+        <div class="product-image">
+          <img src="./smallswan.png" alt="Small Swan">
+        </div>
+        <div class="product-title">SMALL SWAN</div>
+        <div class="product-subtitle">Studs with 2.8 mm Swarovski crystals</div>
+        <div class="toggle-switch">
+          <input type="radio" id="small-fixed" name="small" checked>
+          <label for="small-fixed">Fixed</label>
+          <input type="radio" id="small-dangling" name="small">
+          <label for="small-dangling">Dangling</label>
+        </div>
+        <div class="price-box">
+          <div>
+            <div class="price">₹4,215</div>
+            <small>Includes Gold product, piercing service at home and taxes</small>
+          </div>
+          <button class="btn-cart">Move to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="product-card">
+        <div class="wishlist-icon" onclick="toggleWishlist(this)">
+          <span class="wishlist-popup">Added to wishlist</span>♡
+        </div>
+        <div class="product-image">
+          <img src="./bigswan.png" alt="Big Swan">
+        </div>
+        <div class="product-title">BIG SWAN</div>
+        <div class="product-subtitle">Studs with 3.5 mm Swarovski crystals</div>
+        <div class="toggle-switch">
+          <input type="radio" id="big-fixed" name="big" checked>
+          <label for="big-fixed">Fixed</label>
+          <input type="radio" id="big-dangling" name="big">
+          <label for="big-dangling">Dangling</label>
+        </div>
+        <div class="price-box">
+          <div>
+            <div class="price">₹4,215</div>
+            <small>Includes Gold product, piercing service at home and taxes</small>
+          </div>
+          <button class="btn-cart">Move to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function toggleWishlist(icon) {
+    icon.classList.toggle('active');
+    icon.classList.add('show-popup');
+    setTimeout(() => {
+      icon.classList.remove('show-popup');
+    }, 2000);
+  }
+</script>
+
+</body>
+</html>
